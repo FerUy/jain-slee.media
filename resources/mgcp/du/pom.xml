@@ -4,7 +4,7 @@
 	<parent>
 		<artifactId>mgcp-parent</artifactId>
 		<groupId>org.mobicents.resources</groupId>
-		<version>7.0.0-SNAPSHOT</version>
+		<version>7.2.0-SNAPSHOT</version>
 	</parent>
 
 	<artifactId>mgcp-ra-DU</artifactId>
@@ -13,28 +13,28 @@
 		<dependency>
 			<groupId>org.mobicents.resources</groupId>
 			<artifactId>mgcp-library</artifactId>
-			<version>${pom.version}</version>
+			<version>${project.version}</version>
 		</dependency>		
 		<dependency>
-			<groupId>${pom.groupId}</groupId>
+			<groupId>${project.groupId}</groupId>
 			<artifactId>mgcp-events</artifactId>
-			<version>${pom.version}</version>
+			<version>${project.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>${pom.groupId}</groupId>
+			<groupId>${project.groupId}</groupId>
 			<artifactId>mgcp-ratype</artifactId>
-			<version>${pom.version}</version>
+			<version>${project.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>${pom.groupId}</groupId>
+			<groupId>${project.groupId}</groupId>
 			<artifactId>mgcp-ra</artifactId>
-			<version>${pom.version}</version>
+			<version>${project.version}</version>
 		</dependency>
 	</dependencies>
 
 
 	<build>
-		<finalName>restcomm-mgcp-ra-DU-${pom.version}</finalName>
+		<finalName>restcomm-mgcp-ra-DU-${project.version}</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.mobicents.tools</groupId>

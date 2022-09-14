@@ -5,7 +5,7 @@
 	<parent>
 		<artifactId>mgcp-parent</artifactId>
 		<groupId>org.mobicents.resources</groupId>
-		<version>7.0.0-SNAPSHOT</version>
+		<version>7.2.0-SNAPSHOT</version>
 	</parent>
 	
 	<artifactId>mgcp-library</artifactId>
@@ -18,12 +18,12 @@
 		<dependency>
 			<groupId>org.mobicents.media.client</groupId>
 			<artifactId>mgcp-driver</artifactId>
-			<version>3.0.0.Final</version>
+			<version>${media.server.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.mobicents.media</groupId>
 			<artifactId>concurrent</artifactId>
-			<version>3.0.0.Final</version>
+			<version>${media.server.version}</version>
 		</dependency>
 	</dependencies>
 	

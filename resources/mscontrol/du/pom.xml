@@ -5,36 +5,36 @@
    <parent>
 		<artifactId>restcomm-slee-ra-mscontrol</artifactId>
 		<groupId>org.mobicents.resources.mscontrol</groupId>
-    	<version>7.0.0-SNAPSHOT</version>
+    	<version>7.2.0-SNAPSHOT</version>
 	</parent>
 	
 	<artifactId>restcomm-slee-ra-mscontrol-DU</artifactId>
 
-    <name>Restcomm :: Resources :: ${pom.artifactId}</name>
+    <name>Restcomm :: Resources :: ${project.artifactId}</name>
     <dependencies>
         <dependency>
-            <groupId>${pom.groupId}</groupId>
+            <groupId>${project.groupId}</groupId>
 			<artifactId>mscontrol-events</artifactId>
-            <version>${pom.version}</version>
+            <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>${pom.groupId}</groupId>
+            <groupId>${project.groupId}</groupId>
             <artifactId>mscontrol-library</artifactId>
-            <version>${pom.version}</version>
+            <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>${pom.groupId}</groupId>
+            <groupId>${project.groupId}</groupId>
 			<artifactId>mscontrol-ratype</artifactId>
-            <version>${pom.version}</version>
+            <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>${pom.groupId}</groupId>
+            <groupId>${project.groupId}</groupId>
 			<artifactId>mscontrol-ra</artifactId>
-            <version>${pom.version}</version>
+            <version>${project.version}</version>
         </dependency>
     </dependencies>
     <build>
-    	<finalName>restcomm-slee-ra-mscontrol-DU-${pom.version}</finalName>
+    	<finalName>restcomm-slee-ra-mscontrol-DU-${project.version}</finalName>
         <plugins>
             <plugin>
 				<groupId>org.mobicents.tools</groupId>

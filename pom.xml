@@ -10,13 +10,16 @@
 
 	<groupId>org.mobicents.servers.jainslee.media</groupId>
 	<artifactId>restcomm-slee-media</artifactId>
-	<version>7.0.0-SNAPSHOT</version>
+	<version>7.2.0-SNAPSHOT</version>
 
 	<packaging>pom</packaging>
 
 	<properties>
 		<maven.du.plugin.version>4.0.2</maven.du.plugin.version>
 		<restcomm.resources.sip11.version>7.1.28</restcomm.resources.sip11.version>
+		<compiler.plugin.version>3.8.1</compiler.plugin.version>
+		<compile.source>11</compile.source>
+		<media.server.version>6.3.0-10</media.server.version>
 	</properties>
 
 	<modules>
@@ -32,6 +35,21 @@
 		<developerConnection>scm:git:git@github.com:RestComm/jain-slee.media.git</developerConnection>
 		<url>https://github.com/RestComm/jain-slee.media</url>
 	</scm>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${compiler.plugin.version}</version>
+				<configuration>
+					<source>${compile.source}</source>
+					<target>${compile.source}</target>
+					<debug>${compile.debug}</debug>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 
 	<profiles>
 		<profile>
@@ -55,12 +73,10 @@
 		checkout -->
 
 	<repositories>
-		<!-- maven repository for javax.resources.connector -->
-		<!-- <repository>
-			<id>central-repository</id>
-			<name>Central Repository</name>
-			<url>http://repository.ops4j.org/maven2/</url>
-			<layout>default</layout>
+		<repository>
+			<id>naikeri</id>
+			<name>Naikeri ICT</name>
+			<url>http://127.0.0.1:8082/artifactory/libs-release-local</url>
 			<releases>
 				<enabled>true</enabled>
 				<updatePolicy>never</updatePolicy>
@@ -69,7 +85,7 @@
 				<enabled>true</enabled>
 				<updatePolicy>never</updatePolicy>
 			</snapshots>
-		</repository> -->
+		</repository>
 		<repository>
 			<id>restcomm-public-repository-group</id>
 			<name>Restcomm Public Maven Repository Group</name>

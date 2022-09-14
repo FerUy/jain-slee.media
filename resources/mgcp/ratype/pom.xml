@@ -4,7 +4,7 @@
 	<parent>
 		<artifactId>mgcp-parent</artifactId>
 		<groupId>org.mobicents.resources</groupId>
-		<version>7.0.0-SNAPSHOT</version>
+		<version>7.2.0-SNAPSHOT</version>
 	</parent>
 
 	<artifactId>mgcp-ratype</artifactId>
@@ -15,9 +15,9 @@
 			<artifactId>jain-slee</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>${pom.groupId}</groupId>
+			<groupId>${project.groupId}</groupId>
 			<artifactId>mgcp-events</artifactId>
-			<version>${pom.version}</version>
+			<version>${project.version}</version>
 		</dependency>
 	</dependencies>
 
